@@ -55,10 +55,10 @@ body{
 
 }
 .col-auto{
-    -webkit-transition:all .3s ease; /* Safari y Chrome */
-    -moz-transition:all .3s ease; /* Firefox */
-    -o-transition:all .3s ease; /* IE 9 */
-    -ms-transition:all .3s ease; /* Opera */
+    -webkit-transition: all .3s ease; /* Safari y Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -o-transition: all .3s ease; /* IE 9 */
+    -ms-transition: all .3s ease; /* Opera */
     width: 15%;
     text-align: center;
     margin-bottom: 2%;
