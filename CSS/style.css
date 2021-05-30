@@ -1,0 +1,190 @@
+body{
+    background: linear-gradient(90deg, rgba(124, 170, 240, 0.911), rgba(99, 76, 230, 0.692));
+}
+
+/* Todo en el nav  */
+.nav-link{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+.nav-link:hover{
+    color: rgb(174, 0, 255);
+}
+
+
+
+.fotoPerfil{
+    margin-top: 2%;
+}
+
+.nombre{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+/* Los Titulos  */
+.titulosNav{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 4%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Iconos conocimiento */
+
+.iconosConocimientos{
+    margin-bottom: 10%;
+    width: 50%;
+    height: 60%;
+    overflow:hidden;
+}
+.tituloIconos{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+.col-auto{
+    -webkit-transition:all .3s ease; /* Safari y Chrome */
+    -moz-transition:all .3s ease; /* Firefox */
+    -o-transition:all .3s ease; /* IE 9 */
+    -ms-transition:all .3s ease; /* Opera */
+    width: 15%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.col-auto:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+@media only screen and (max-width: 600px) {
+    [class*="conocimiento"] {
+        width: 32%;
+      }
+    [class*="certificado"]{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    [class*="conocimiento"] {
+        width: 32%;
+      }
+      [class*="certificado"]{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    [class*="conocimiento"] {
+        width: 25%;
+      }
+      [class*="certificado"]{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    [class*="conocimiento"] {
+        width: 25%;
+      }
+      [class*="certificado"]{
+        width: 32%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    [class*="conocimiento"] {
+        width: 15%;
+      }
+      [class*="certificado"]{
+        width: 32%;
+    }
+}
+
+/* Certificados */
+
+.tituloCertificados{
+    text-align: center;
+
+}
+
+
+
+/* Formulario */
+
+.formulario{
+    display:flex;
+    justify-content: center;
+}
+#contactoForm{
+    border-style: dashed;
+    border-color: rgba(163, 68, 252, 0.589);
+    border-radius: 20px;
+    padding: 1%;
+}
+#tituloContacto{
+    float: left;
+}
+.control{
+    width: 100%;
+    padding: 3%;
+    background-color: rgba(108, 110, 247, 0.596);
+    border: none;
+    border-radius: 10px;
+    -webkit-transition:all .3s ease; /* Safari y Chrome */
+    -moz-transition:all .3s ease; /* Firefox */
+    -o-transition:all .3s ease; /* IE 9 */
+    -ms-transition:all .3s ease; /* Opera */
+
+}
+.control:hover{
+    -webkit-transform:scale(1.02);
+    -moz-transform:scale(1.02);
+    -ms-transform:scale(1.02);
+    -o-transform:scale(1.02);
+    transform:scale(1.02);
+    }
+.boton{
+    border-style: none;
+    border-radius: 15px;
+    margin-top: 1%;
+    float: right;
+    padding: 3%;
+    background-color: rgba(64, 67, 233, 0.493);
+}
+#contactoEnForm{
+    float: right;
+}
+/* Boton de subida */
+.subidaAInicio{
+    margin-right: 5%;
+    display:scroll;
+    position:fixed;
+    bottom:5%;
+    right:2%;
+    border-style: none;
+    border-radius: 15px;
+    padding: 1%;
+    background-color: rgba(64, 67, 233, 0.493);
+}
+.linkInicio{
+    color: white;
+}
+.linkInicio:hover{
+    color: white;
+    text-decoration: none;
+}
