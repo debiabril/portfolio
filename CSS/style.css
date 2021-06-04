@@ -126,29 +126,39 @@ body{
 
 /* Formulario */
 
-.formulario{
+/* .formulario{
     display:flex;
     justify-content: center;
-}
-#contactoForm{
+} */
+/* #contactoForm{
     border-style: dashed;
     border-color: rgba(163, 68, 252, 0.589);
     border-radius: 20px;
     padding: 1%;
-}
+} */
+/* .formulario{
+    margin-left: 38%;
+    width: 25%;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: rgba(163, 68, 252, 0.589);
+    margin-bottom: 5%;
+    padding: 3%;
+} */
 #tituloContacto{
-    float: left;
+    text-align: center;
 }
-.control{
+
+/* .control{
     width: 100%;
     padding: 3%;
     background-color: rgba(108, 110, 247, 0.596);
     border: none;
     border-radius: 10px;
-    -webkit-transition:all .3s ease; /* Safari y Chrome */
-    -moz-transition:all .3s ease; /* Firefox */
-    -o-transition:all .3s ease; /* IE 9 */
-    -ms-transition:all .3s ease; /* Opera */
+    -webkit-transition:all .3s ease; 
+    -moz-transition:all .3s ease; 
+    -o-transition:all .3s ease; 
+    -ms-transition:all .3s ease; 
 
 }
 .control:hover{
@@ -157,7 +167,7 @@ body{
     -ms-transform:scale(1.02);
     -o-transform:scale(1.02);
     transform:scale(1.02);
-    }
+    } */
 .boton{
     border-style: none;
     border-radius: 15px;
@@ -167,8 +177,14 @@ body{
     background-color: rgba(64, 67, 233, 0.493);
 }
 #contactoEnForm{
-    float: right;
+    text-align: center;
 }
+.iconosContacto{
+    padding: 2%;
+    margin: 2%;
+}
+
+
 /* Boton de subida */
 .subidaAInicio{
     margin-right: 5%;
