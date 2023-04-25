@@ -1,0 +1,342 @@
+*{
+    font-family: 'Poltawski Nowy', serif;
+}
+div.containerNavbar
+{
+    margin: 0 auto;
+	text-align: center;
+}
+
+div.containerNavbar a
+{
+    color: #FFF;
+    text-decoration: none;
+    font-size: large;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #0277bd;
+    transform: translateX(-70%) translateY(-70%) scale(0.9);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-60%) translateY(-60%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-60%) translateY(-60%) scale(1.3);
+}
+.banner{
+    background-image: url(./assets/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgb(23, 23, 23);
+    min-height:5rem;
+    width: 100%;
+}
+.div-img-fotoPerfil{
+    width: 15rem;
+}
+.img-fotoPerfil{
+    width: 15rem; z-index: 1
+}
+.titulo-nombre{
+    font-family: 'Marko One', serif;
+}
+.titulo-profesion{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+.acercade{
+    color: black;
+    background-color: #35D0BA;
+    margin: 0;
+    margin-bottom: 0;
+}
+.fondo{
+    background-color: #35D0BA;
+    margin: 0;
+    padding: 0;
+}
+.lead{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+p{
+    font-size: large;
+}
+
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #35D0BA;
+} */
+.redes {
+    position: relative;
+    display: flex;
+    transform: rotate(0deg) skew(25deg);
+    transform-style: preserve-3d;
+}
+.redes li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0px 20px;
+}
+.redes li:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+.redes li:after{
+    content: '';
+    position: absolute;
+    top:5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-49deg);
+}
+.redes li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: #2a2a2a;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+    transition: 1.5s ease-out;
+}
+.redes li:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+.redes li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+.redes li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+.redes li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+.redes li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+.redes li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: .2;
+}
+.redes li:nth-child(1):hover span{
+    background: #0a8cf6 !important;
+}
+.redes li:nth-child(2):hover span{
+    background: #000000 !important;
+}
+.redes li:nth-child(3):hover span{
+    background: #07cd11 !important;
+}
+.redes li:nth-child(4):hover span{
+    background: #FCEB00 !important;
+}
+@media (max-width:630px){
+    .descripcion{
+        width: 90%;
+        margin: auto;
+    }
+}
+.educacion{
+    background-color: #FFCD3C;
+}
+.card-img-top{
+    margin: 0.4rem 0.4rem;
+    width: auto;
+    height: 11rem !important;
+    object-fit: cover;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.39);
+}
+.lead, .card-title{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+.card, .list-group-item{
+    color: black;
+    background-color: #ff663c;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.skills{
+    color: black;
+    background-color: #FF9234;
+}
+.progress-title{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+    font-size: small;
+    margin: 0 0 ;
+}
+.progress{
+    height: 25px;
+    background: #fff;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    overflow: visible;
+    position: relative;
+}
+.progress:before,
+.progress:after{
+    content: "";
+    width: 5px;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+}
+.progress:after{
+    left: auto;
+    right: -5px;
+}
+.progress .progress-bar{
+    border: none;
+    box-shadow: none;
+    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+}
+:root{
+    --red-color: rgba(255, 0, 0, 0.884);
+    --green-color: rgb(4, 194, 4);
+    --violet-color: rgb(119, 0, 255);
+    --orange-color: rgb(255, 136, 0);
+    --lightblue-color: rgb(86, 213, 255);
+    --yellow-color: rgb(225, 203, 4);
+    --black-color: black;
+}
+.progress-bar-red{
+    background-color: var(--red-color);
+}
+
+.progress-bar-green{
+    background-color: var(--green-color);
+}
+.progress-bar-violet{
+    background-color: var(--violet-color);
+}
+.progress-bar-orange{
+    background-color: var(--orange-color);
+}
+.progress-bar-lightblue{
+    background-color: var(--lightblue-color);
+}
+.progress-bar-yellow{
+    background-color: var(--yellow-color);
+}
+.progress-bar-black{
+    background-color: var(--black-color);
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+@media (max-width:1350px){
+    .barraSkill{
+        min-width: 33%;
+    }
+}
+@media (max-width:1065px){
+    .barraSkill{
+        min-width: 50%;
+    }
+}
+@media (max-width:630px){
+    .barraSkill{
+        min-width: 95%;
+    }
+}
+
+.experiencia{
+    color: black;
+    background-color: #D92027;
+}
+.experiencia .card, .experiencia li{
+    color: aliceblue;
+    background-color: #edb601;
+}
+
+.proyecto{
+    color: black;
+    background-color: #35D0BA;
+}
+
+.proyecto .card, .proyecto li{
+    color: aliceblue;
+    background-color: #067e82;
+}
+
+
+footer{
+    background-color:black;
+    display: flex; 
+    justify-content: center;
+    
+}
+.footerText{
+    text-align: center;
+    color: white; font-family: 'Life Savers', cursive;
+    font-weight: bold;  
+}
